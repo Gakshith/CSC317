@@ -1,18 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Practice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshith Gojuru</title>
+
+  <link id="css-theme" rel="stylesheet" href="styles/hybrid.css">
+  <script src="scripts/script.js" defer></script>
+  
 </head>
 <body>
-    <h1>JavaScript Week 0 Practice</h1>
-    <button id="greetButton">Click Me!</button>
-    <div id="output"></div>
-    
-    <script src="hello.js"></script>
-    <script>
-        document.getElementById("greetButton").addEventListener("click", function() {
-            document.getElementById("output").textContent = createMessage("JavaScript");
-        });
-    </script>
+
+<header>
+<!-- Profile picture -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="images/profile.jpg" alt="Profile picture"
+       style="width:150px; height:150px; object-fit:cover; 
+border-radius:50%; border:3px solid white; box-shadow:0 0 10px 
+rgba(0,0,0,0.3);">
+</div>
+
+  <h1>Akshith Gojuru</h1>
+  <nav>
+    <ul>
+      <li><a href="#aboutmebio">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>Hello, I'm Akshith, a junior studying Computer Science at San Francisco State University.
+		I transferred from CMR college and focus on front-end web development,
+		with a growing curiosity for human-computer interaction and UI polish.</p>
+	<p>My goal is to join a product team where I can ship real features, collaborate across design
+    and engineering, and keep learning modern web stacks. Outside class, I recharge by cooking,
+    running the park loop, and testing indie game prototypes with friends.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+     
+      <h3>Programming Languages</h3>
+     
+      <ul>
+        <li>HTML</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+     
+      <h3>Tools and Technology</h3>
+       <ul>
+          <li>VSCode</li>
+          <li>Computer Networks</li>
+          <li>Deep Learning</li>
+          <li>Terminal</li>
+          <li>Machine Learning</li>
+       </ul>
+     
+   
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+       <ul>
+           <li class="dropdown">
+            <h4>BookVault CLI</h4>
+           <ul class="dropdown-content">
+              <li>Source code written in C++</li>
+              <li>Used CLion</li>
+              <li>Designed a modular file structure with headers and source files; practiced
+                  separation of concerns and simple persistence.</li>
+              <li>Brief Description: Command-line library manager to buy, rent, and return books,
+                  track inventory items (pencils, laptops, apparel), and simulate a user wallet
+                  with balance checks.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>CardSmith (Greeting Card Generator)</h4>
+           <ul class="dropdown-content">
+              <li>Code written in Java</li>
+              <li>Used IntelliJ</li>
+              <li>Strengthened OOP design with inheritance and composition; managed multiple classes
+                  for templates, renderers, and export.</li>
+              <li>Brief Description: Users add recipients, pick a message and a character pattern,
+                  and generate themed ASCII greeting cards inspired by SF Giants tickets.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>Course Syllabus</h4>
+           <ul class="dropdown-content">
+              <li>Code written in HTML and CSS</li>
+              <li>Used TextEdit</li>
+              <li>Built a clean multi-page layout, practiced table semantics, and improved typography
+                  for readability.</li>
+              <li>Brief Description: A class assignment to publish a course syllabus as a small website.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>Bistro Landing Page</h4>
+           <ul class="dropdown-content">
+              <li>Code written in HTML and CSS</li>
+              <li>Used TextEdit</li>
+              <li>Added responsive images, styled a menu section, and experimented with navigation and
+                  hero layouts.</li>
+              <li>Brief Description: A concept website for a fictional neighborhood restaurant.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>Shopfront Mock</h4>
+           <ul class="dropdown-content">
+              <li>Code written in HTML and CSS</li>
+              <li>Used TextEdit and VS Code</li>
+		      <li>Structured product grids and simple detail pages while planning accessible navigation.</li>
+              <li>Brief Description: Early wireframe for a friend’s small business site; helped me explore
+                  IA and content hierarchy.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>Calculator</h4>
+           <ul class="dropdown-content">
+              <li>Code written in HTML, CSS, and JavaScript</li>
+              <li>Used VS Code</li>
+		      <li>Built a responsive calculator with core operations, keyboard support, array-based memory,
+                  and a light/dark theme toggle.</li>
+              <li>Brief Description: A fully functional calculator modeled after mobile calculator apps.</li>
+              <nav>
+                <ul>
+                    <li>Link: <a href="calculator.html">Calculator</a></li>
+                </ul>
+              </nav>
+           </ul>
+           </li>
+       </ul>
+   
+  </section>
+
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+    <h2>Theme Switcher</h2>
+    <div class="theme-buttons">
+        <button class="theme-button active" data-theme="styles">Hand-Written</button>
+        <button class="theme-button" data-theme="ai-1">AI 1</button>
+        <button class="theme-button" data-theme="ai-2">AI 2</button>
+        <button class="theme-button" data-theme="ai-3">AI 3</button>
+        <button class="theme-button" data-theme="ai-4">AI 4</button>
+        <button class="theme-button" data-theme="hybrid">Hybrid</button>
+    </div>
+</div>
+
+</main>
+
+<footer id="contact">
+<a href="https://github.com/Gakshith/CSC317"><img src="images/githubIMG.jpeg" 
+  alt="GitHub logo" width="60" height="60"></a> 
+
+<a href="https://www.linkedin.com/in/akshithgojuru/"><img src="images/LinkedInIMG.jpeg" 
+  alt="LinkedIn logo" width="60" height="60"></a>
+
+</footer>
+
 </body>
 </html>
