@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #000; /* Black background */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect behind header */
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #00ffe0; /* Turquoise */
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00ffe0;
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #222;
+}
+
+main section h2 {
+    color: #00ffe0;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Skills Lists */
+main section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main section li {
+    margin: 5px 0;
+}
+
+/* Projects Hover Effect */
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+}
+
+#projects .dropdown {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#projects .dropdown:hover {
+    background: linear-gradient(135deg, #00ffe0, #00bfa5); /* Radiant turquoise effect */
+    transform: scale(1.03);
+}
+
+#projects .dropdown h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    margin-left: 15px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Info */
+footer::after {
+    content: "Email: nmuniz1@sfsu.edu | Phone: 949-456-3301";
+    color: #00ffe0;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #projects ul {
+        width: 95%;
+    }
+}
