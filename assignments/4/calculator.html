@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body class="dark-mode">
+  <!-- Fixed controls at page corners -->
+  <a class="back" href="index.html">← Back to Portfolio</a>
+
+  <label class="switch">
+    <input type="checkbox" id="themeToggle" />
+    <span class="slider"></span>
+  </label>
+
+  <!-- Simple header (title stays centered) -->
+  <header class="bar">
+    <h1>Calculator</h1>
+  </header>
+
+  <!-- Calculator body -->
+  <main class="wrap" role="application">
+    <section class="calc">
+      <div class="display-row">
+        <div id="memDot" class="mem-dot">M</div>
+        <div id="display" class="display">0</div>
+      </div>
+
+      <div class="keys" id="keys">
+        <!-- Memory functions -->
+        <button class="btn act" value="MC">MC</button>
+        <button class="btn act" value="MR">MR</button>
+        <button class="btn act" value="M+">M+</button>
+        <button class="btn act" value="M-">M-</button>
+
+        <!-- Row 1 -->
+        <button class="btn act" value="AC">AC</button>
+        <button class="btn act" value="+/-">+/-</button>
+        <button class="btn act" value="%">%</button>
+        <button class="btn op"  value="÷">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn num" value="7">7</button>
+        <button class="btn num" value="8">8</button>
+        <button class="btn num" value="9">9</button>
+        <button class="btn op"  value="×">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn num" value="4">4</button>
+        <button class="btn num" value="5">5</button>
+        <button class="btn num" value="6">6</button>
+        <button class="btn op"  value="-">-</button>
+
+        <!-- Row 4 -->
+        <button class="btn num" value="1">1</button>
+        <button class="btn num" value="2">2</button>
+        <button class="btn num" value="3">3</button>
+        <button class="btn op"  value="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn num wide" value="0">0</button>
+        <button class="btn num" value=".">.</button>
+        <button class="btn eq"  value="=">=</button>
+      </div>
+    </section>
+  </main>
+  <script src="scripts/calculator.js"></script>
+</body>
+</html>
